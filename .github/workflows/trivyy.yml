@@ -1,0 +1,44 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: build
+
+on:
+
+  push:
+
+    branches:
+
+    - master
+
+  pull_request:
+
+jobs:
+
+  build:
+
+    name: Build
+
+    runs-on: ubuntu-20.04
+
+    steps:
+
+    - name: Checkout code
+
+      uses: actions/checkout@v3
+
+
+
+    - name: Run Trivy vulnerability scanner in fs mode
+
+      uses: aquasecurity/trivy-action@master
+
+      with:
+
+        scan-type: 'fs'
+
+        scan-ref: '.'
+
+        trivy-config: trivy.yaml
