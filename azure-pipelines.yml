@@ -19,8 +19,7 @@ steps:
     testType: 'app'
     monitorWhen: 'always'
     failOnIssues: false
-    projectName: 'akashnish'
-    organization: 'akashnish'
+    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
