@@ -14,7 +14,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - task: SnykSecurityScan@1
-        inputs:
+      inputs:
       serviceConnectionEndpoint: 'snyk'
         testType: 'container'
         dockerImageName: 'Newimage'
@@ -22,6 +22,6 @@ steps:
         monitorWhen: 'always'
         failOnIssues: false
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
+     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
