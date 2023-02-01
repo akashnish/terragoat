@@ -13,8 +13,8 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-    - task: SnykSecurityScan@1
-      inputs:
+- task: SnykSecurityScan@1
+        inputs:
       serviceConnectionEndpoint: 'snyk'
         testType: 'container'
         dockerImageName: 'Newimage'
