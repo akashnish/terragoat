@@ -28,5 +28,9 @@ jobs:
       uses: zaproxy/action-full-scan@v0.7.0
       with:
     # Target URL
-       target: 'https://demo.testfire.net -r testreport.html'
+       target: 'https://demo.testfire.net -r testreport.html '
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: C:\Users\akash.biradar\Documents\Zap report/world.txt
    
