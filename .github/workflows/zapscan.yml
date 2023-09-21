@@ -31,6 +31,6 @@ jobs:
        target: 'https://demo.testfire.net -r testreport.html '
     - uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
+        name: Zap report
         path: C:\Users\akash.biradar\Documents\Zap report/world.txt
    
