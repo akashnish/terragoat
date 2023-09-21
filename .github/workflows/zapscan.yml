@@ -28,7 +28,7 @@ jobs:
       uses: zaproxy/action-full-scan@v0.7.0
       with:
     # Target URL
-       target: 'https://demo.testfire.net -r testreport.html '
+       target: 'https://demo.testfire.net -r report.html '
     - uses: actions/upload-artifact@v3
       with:
         name: Zap report
