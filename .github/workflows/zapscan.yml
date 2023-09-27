@@ -10,15 +10,15 @@ on:
   #pull_request:
     #branches: [ "main" ]
   schedule: ## Schedule the job to run at 12.am daily.
-      - cron: '0 19 * * *'
+     - cron: '30 19 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   # workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  schedule:
   # This workflow contains a single job called "build"
-  build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
